@@ -1,0 +1,36 @@
+{
+  "name": "Navigation",
+  "version": "0.0.1",
+  "license": {
+    "type": "BSD"
+  },
+  "homepage": "https://github.com/sebastianpixel/DependencyInjectionExample",
+  "authors": {
+    "Sebastian Pickl": "sebastianpickl@gmail.com"
+  },
+  "summary": "Example for https://github.com/sebastianpixel/DependencyInjection",
+  "source": {
+    "git": "https://github.com/sebastianpixel/DependencyInjectionExample.git"
+  },
+  "platforms": {
+    "ios": "14.0"
+  },
+  "requires_arc": true,
+  "swift_versions": "5.4",
+  "subspecs": [
+    {
+      "name": "Interface",
+      "source_files": "Interface"
+    },
+    {
+      "name": "Implementation",
+      "source_files": "Implementation",
+      "dependencies": {
+        "Navigation/Interface": [
+
+        ]
+      }
+    }
+  ],
+  "swift_version": "5.4"
+}

@@ -1,0 +1,40 @@
+PODS:
+  - DependencyInjection (2.0.2)
+  - Main (0.0.1):
+    - Main/Implementation (= 0.0.1)
+    - Main/Interface (= 0.0.1)
+  - Main/Implementation (0.0.1):
+    - DependencyInjection
+    - Main/Interface
+  - Main/Interface (0.0.1):
+    - Navigation/Interface
+  - Navigation (0.0.1):
+    - Navigation/Implementation (= 0.0.1)
+    - Navigation/Interface (= 0.0.1)
+  - Navigation/Implementation (0.0.1):
+    - Navigation/Interface
+  - Navigation/Interface (0.0.1)
+
+DEPENDENCIES:
+  - DependencyInjection
+  - Main (from `./Modules/Main/Main.podspec`)
+  - Navigation (from `./Modules/Navigation/Navigation.podspec`)
+
+SPEC REPOS:
+  trunk:
+    - DependencyInjection
+
+EXTERNAL SOURCES:
+  Main:
+    :path: "./Modules/Main/Main.podspec"
+  Navigation:
+    :path: "./Modules/Navigation/Navigation.podspec"
+
+SPEC CHECKSUMS:
+  DependencyInjection: 49b0bcf0dff64054826d897d3431a1984de9edba
+  Main: 8ac98ff4771d9e536c14c81b9d2e70c8c62ceec3
+  Navigation: b58ed50c617db66bfdc7a14533485f93691912cd
+
+PODFILE CHECKSUM: 1d4600709d56e8028de40e151dcb5377e1ac2e33
+
+COCOAPODS: 1.10.1

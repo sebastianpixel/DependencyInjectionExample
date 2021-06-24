@@ -1,0 +1,6 @@
+framework module Main {
+  umbrella header "Main-umbrella.h"
+
+  export *
+  module * { export * }
+}
