@@ -1,4 +1,4 @@
-import Combine
+import DependencyInjection
 import SharedUIComponents
 
 enum MainViewModelInput {
@@ -17,12 +17,11 @@ protocol MainViewModelProtocol: ViewModel where Input == MainViewModelInput, Out
 
 final class MainViewModel: MainViewModelProtocol {
 
-    let output = MainViewModelOutput(buttonTitle: "next!")
+    @Inject private var repository: MainRepositoryProtocol
+    @Inject private var coordinator: MainCoordinatorProtocol
 
-    private unowned let coordinator: MainCoordinatorProtocol
-
-    init(coordinator: MainCoordinatorProtocol) {
-        self.coordinator = coordinator
+    var output: MainViewModelOutput {
+        .init(buttonTitle: repository.buttonTitle)
     }
 
     func trigger(_ input: MainViewModelInput) {

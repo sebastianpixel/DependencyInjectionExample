@@ -1,8 +1,7 @@
-//
-//  MainLocalDataSource.swift
-//  SharedUIComponents
-//
-//  Created by Sebastian Pickl on 25.06.21.
-//
+protocol MainLocalDataSourceProtocol {
+    var buttonTitle: String { get }
+}
 
-import Foundation
+final class MainLocalDataSource: MainLocalDataSourceProtocol {
+    let buttonTitle = "Go to detail page"
+}

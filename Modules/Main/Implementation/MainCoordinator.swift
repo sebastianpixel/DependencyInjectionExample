@@ -1,4 +1,5 @@
 import DependencyInjection
+import DetailScreen
 import UIKit
 
 final class MainCoordinator: MainCoordinatorProtocol {
@@ -13,6 +14,8 @@ final class MainCoordinator: MainCoordinatorProtocol {
     }
 
     func showDetailPage() {
-
+        let detailScreenCoordinator = DIContainer.resolve(DetailScreenCoordinatorProtocol.self)
+        detailScreenCoordinator.navigationController = navigationController
+        detailScreenCoordinator.start()
     }
 }

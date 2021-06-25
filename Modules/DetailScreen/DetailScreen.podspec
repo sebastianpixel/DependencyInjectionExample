@@ -22,14 +22,13 @@ Pod::Spec.new do |s|
 
     subspec.dependency "#{s.name}/Interface"
     subspec.dependency 'SharedUIComponents/Interface'
-    subspec.dependency 'DetailScreen/Interface'
   end
 
   s.test_spec 'Tests' do |test_spec|
     test_spec.source_files = 'Tests'
 
-#    test_spec.dependency 'DependencyInjection'
+    test_spec.dependency 'DependencyInjection'
 
-#    test_spec.dependency "#{s.name}/Interface"
+    test_spec.dependency "#{s.name}/Interface"
   end
 end

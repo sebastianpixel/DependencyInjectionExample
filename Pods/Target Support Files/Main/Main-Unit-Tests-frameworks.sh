@@ -178,12 +178,14 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Main/Main.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DependencyInjection/DependencyInjection.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SharedUIComponents/SharedUIComponents.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DetailScreen/DetailScreen.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Navigation/Navigation.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Main/Main.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DependencyInjection/DependencyInjection.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SharedUIComponents/SharedUIComponents.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DetailScreen/DetailScreen.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Navigation/Navigation.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

@@ -1,8 +1,8 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DependencyInjection" "${PODS_CONFIGURATION_BUILD_DIR}/Main" "${PODS_CONFIGURATION_BUILD_DIR}/Navigation" "${PODS_CONFIGURATION_BUILD_DIR}/SharedUIComponents"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DependencyInjection" "${PODS_CONFIGURATION_BUILD_DIR}/DetailScreen" "${PODS_CONFIGURATION_BUILD_DIR}/Main" "${PODS_CONFIGURATION_BUILD_DIR}/Navigation" "${PODS_CONFIGURATION_BUILD_DIR}/SharedUIComponents"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DependencyInjection/DependencyInjection.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Main/Main.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Navigation/Navigation.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SharedUIComponents/SharedUIComponents.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "DependencyInjection" -framework "Main" -framework "Navigation" -framework "SharedUIComponents"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DependencyInjection/DependencyInjection.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/DetailScreen/DetailScreen.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Main/Main.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Navigation/Navigation.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SharedUIComponents/SharedUIComponents.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "DependencyInjection" -framework "DetailScreen" -framework "Main" -framework "Navigation" -framework "SharedUIComponents"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

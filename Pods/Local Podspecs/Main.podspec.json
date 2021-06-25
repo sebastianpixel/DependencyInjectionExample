@@ -21,15 +21,7 @@
     {
       "name": "Tests",
       "test_type": "unit",
-      "source_files": "Tests",
-      "dependencies": {
-        "DependencyInjection": [
-
-        ],
-        "Main/Interface": [
-
-        ]
-      }
+      "source_files": "Tests"
     }
   ],
   "subspecs": [
@@ -53,6 +45,9 @@
 
         ],
         "SharedUIComponents/Interface": [
+
+        ],
+        "DetailScreen/Interface": [
 
         ]
       }

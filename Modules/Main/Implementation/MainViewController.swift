@@ -35,6 +35,8 @@ final class MainViewController: UIViewController, MainViewControllerProtocol {
         button.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(button)
 
+        view.backgroundColor = .blue
+
         NSLayoutConstraint.activate([
             button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             button.centerYAnchor.constraint(equalTo: view.centerYAnchor)

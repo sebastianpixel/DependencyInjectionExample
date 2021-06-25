@@ -1,8 +1,13 @@
-//
-//  MainRepository.swift
-//  SharedUIComponents
-//
-//  Created by Sebastian Pickl on 25.06.21.
-//
+import DependencyInjection
 
-import Foundation
+protocol MainRepositoryProtocol {
+    var buttonTitle: String { get }
+}
+
+final class MainRepository: MainRepositoryProtocol {
+    @Inject private var localDataSource: MainLocalDataSourceProtocol
+
+    var buttonTitle: String {
+        localDataSource.buttonTitle
+    }
+}
