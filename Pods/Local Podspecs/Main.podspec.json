@@ -17,6 +17,21 @@
   },
   "requires_arc": true,
   "swift_versions": "5.4",
+  "testspecs": [
+    {
+      "name": "Tests",
+      "test_type": "unit",
+      "source_files": "Tests",
+      "dependencies": {
+        "Main/Interface": [
+
+        ],
+        "DependencyInjection": [
+
+        ]
+      }
+    }
+  ],
   "subspecs": [
     {
       "name": "Interface",

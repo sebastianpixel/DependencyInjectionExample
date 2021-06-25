@@ -8,6 +8,9 @@ PODS:
     - Main/Interface
   - Main/Interface (0.0.1):
     - Navigation/Interface
+  - Main/Tests (0.0.1):
+    - DependencyInjection
+    - Main/Interface
   - Navigation (0.0.1):
     - Navigation/Implementation (= 0.0.1)
     - Navigation/Interface (= 0.0.1)
@@ -18,6 +21,7 @@ PODS:
 DEPENDENCIES:
   - DependencyInjection
   - Main (from `./Modules/Main/Main.podspec`)
+  - Main/Tests (from `./Modules/Main/Main.podspec`)
   - Navigation (from `./Modules/Navigation/Navigation.podspec`)
 
 SPEC REPOS:
@@ -32,9 +36,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   DependencyInjection: 49b0bcf0dff64054826d897d3431a1984de9edba
-  Main: 8ac98ff4771d9e536c14c81b9d2e70c8c62ceec3
+  Main: f0db7d31d655f7d1af3243a571f129268c7094fb
   Navigation: b58ed50c617db66bfdc7a14533485f93691912cd
 
-PODFILE CHECKSUM: 1d4600709d56e8028de40e151dcb5377e1ac2e33
+PODFILE CHECKSUM: 57a5f946d4ff929365d9721d85f1fa63ef7f343a
 
 COCOAPODS: 1.10.1

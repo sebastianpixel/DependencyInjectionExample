@@ -9,9 +9,10 @@ source 'https://cdn.cocoapods.org/'
 target 'DIExample' do
   pod 'DependencyInjection'
 
+  # Development Pods
   Dir["./Modules/**/*.podspec"].each do |spec|
     name = File.basename spec, '.podspec'
-    pod name, :path => spec
+    pod name, :path => spec, :testspecs => Dir["#{File.dirname spec}/Tests*"].map { |dir| File.basename dir }
   end
 
   target 'DIExampleTests' do
