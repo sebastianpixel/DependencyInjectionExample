@@ -31,7 +31,7 @@
 		3F4F485B46D95074F96D89BF1487A44D /* DependencyRegistering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241694279C72B0C5F73E41932C732472 /* DependencyRegistering.swift */; };
 		4EFE4EAEECCB6AEF5BEB75F4BC39DE22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353C983732431B78FC7AAD2A133AFBF0 /* Foundation.framework */; };
 		544A176F6E8E91CF52CC767DC7C6FC63 /* MainCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07193EBA1B0EE18AF18C1C504798D448 /* MainCoordinatorTests.swift */; };
-		5B34889740B331BCA4D5B0E4C4201A5B /* DetailScreenCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C64E735CE593B5D9FC4C21159B5B900 /* DetailScreenCoordinatorTests.swift */; };
+		5B34889740B331BCA4D5B0E4C4201A5B /* DetailScreenViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C64E735CE593B5D9FC4C21159B5B900 /* DetailScreenViewModelTests.swift */; };
 		5FDB61DFB99D700FAB28F7C3CC5D5864 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353C983732431B78FC7AAD2A133AFBF0 /* Foundation.framework */; };
 		63900D2A4A653589A24DB5556797D462 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353C983732431B78FC7AAD2A133AFBF0 /* Foundation.framework */; };
 		74C89DAB2C900EDF618013D16C038152 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AD9E307853A4879FC275210A5C26B2 /* Registration.swift */; };
@@ -243,7 +243,7 @@
 		268D23B06FB56910C73F574BF81A4983 /* Coordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coordinator.swift; path = Interface/Coordinator.swift; sourceTree = "<group>"; };
 		27CA8C626420EE1A93A504814F9C83FD /* ReentrantSyncQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReentrantSyncQueue.swift; path = Sources/DependencyInjection/ReentrantSyncQueue.swift; sourceTree = "<group>"; };
 		28C5759DCAA3191EBD42F39031F9E926 /* DependencyInjection-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DependencyInjection-dummy.m"; sourceTree = "<group>"; };
-		2C64E735CE593B5D9FC4C21159B5B900 /* DetailScreenCoordinatorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DetailScreenCoordinatorTests.swift; path = Tests/DetailScreenCoordinatorTests.swift; sourceTree = "<group>"; };
+		2C64E735CE593B5D9FC4C21159B5B900 /* DetailScreenViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DetailScreenViewModelTests.swift; path = Tests/DetailScreenViewModelTests.swift; sourceTree = "<group>"; };
 		2CE081FA450AE6D5667254F2A711C85F /* Shared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shared.swift; path = Sources/DependencyInjection/Registrations/Shared.swift; sourceTree = "<group>"; };
 		2DB9AB5391A0F70269948903B54F110E /* New.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = New.swift; path = Sources/DependencyInjection/Registrations/New.swift; sourceTree = "<group>"; };
 		2E0FBF4904E64B637991C023E0BED5B1 /* Main.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Main.release.xcconfig; sourceTree = "<group>"; };
@@ -779,7 +779,7 @@
 		D405DC31878E0684BB3EA783630CE079 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				2C64E735CE593B5D9FC4C21159B5B900 /* DetailScreenCoordinatorTests.swift */,
+				2C64E735CE593B5D9FC4C21159B5B900 /* DetailScreenViewModelTests.swift */,
 				E89270BD2685EEF200993BB3 /* DetailScreenCoordinatorMock.swift */,
 				E89270BB2685EE1500993BB3 /* DetailScreenRepositoryMock.swift */,
 			);
@@ -1293,7 +1293,7 @@
 			files = (
 				E89270BE2685EEF200993BB3 /* DetailScreenCoordinatorMock.swift in Sources */,
 				E89270BC2685EE1500993BB3 /* DetailScreenRepositoryMock.swift in Sources */,
-				5B34889740B331BCA4D5B0E4C4201A5B /* DetailScreenCoordinatorTests.swift in Sources */,
+				5B34889740B331BCA4D5B0E4C4201A5B /* DetailScreenViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
