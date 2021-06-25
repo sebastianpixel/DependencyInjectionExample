@@ -6,6 +6,7 @@ PODS:
   - Main/Implementation (0.0.1):
     - DependencyInjection
     - Main/Interface
+    - SharedUIComponents/Interface
   - Main/Interface (0.0.1):
     - Navigation/Interface
   - Main/Tests (0.0.1):
@@ -17,12 +18,19 @@ PODS:
   - Navigation/Implementation (0.0.1):
     - Navigation/Interface
   - Navigation/Interface (0.0.1)
+  - SharedUIComponents (0.0.1):
+    - SharedUIComponents/Implementation (= 0.0.1)
+    - SharedUIComponents/Interface (= 0.0.1)
+  - SharedUIComponents/Implementation (0.0.1):
+    - SharedUIComponents/Interface
+  - SharedUIComponents/Interface (0.0.1)
 
 DEPENDENCIES:
   - DependencyInjection
   - Main (from `./Modules/Main/Main.podspec`)
   - Main/Tests (from `./Modules/Main/Main.podspec`)
   - Navigation (from `./Modules/Navigation/Navigation.podspec`)
+  - SharedUIComponents (from `./Modules/SharedUIComponents/SharedUIComponents.podspec`)
 
 SPEC REPOS:
   trunk:
@@ -33,11 +41,14 @@ EXTERNAL SOURCES:
     :path: "./Modules/Main/Main.podspec"
   Navigation:
     :path: "./Modules/Navigation/Navigation.podspec"
+  SharedUIComponents:
+    :path: "./Modules/SharedUIComponents/SharedUIComponents.podspec"
 
 SPEC CHECKSUMS:
   DependencyInjection: 49b0bcf0dff64054826d897d3431a1984de9edba
-  Main: f0db7d31d655f7d1af3243a571f129268c7094fb
+  Main: 998ce1a84e160a72a5a2971b93bc76682dc3b520
   Navigation: b58ed50c617db66bfdc7a14533485f93691912cd
+  SharedUIComponents: 468fe2151b38447ac0a3028ec7a56ba755254538
 
 PODFILE CHECKSUM: 57a5f946d4ff929365d9721d85f1fa63ef7f343a
 

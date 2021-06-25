@@ -1,6 +1,7 @@
-import Foundation
+import UIKit
 
 public protocol Coordinator: AnyObject {
+    var navigationController: UINavigationController? { get set }
     func start()
     func retain(_ child: Coordinator)
     func release(_ child: Coordinator)

@@ -11,7 +11,7 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
-    @Inject private var coordinator: MainCoordinatorProtocol.Type
+    @Inject private var coordinator: MainCoordinatorProtocol
 
     var window: UIWindow?
 
@@ -21,14 +21,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         let navigationController = UINavigationController()
-        let main = coordinator.init(navigationController: navigationController)
+        coordinator.navigationController = navigationController
 
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             window.rootViewController = navigationController
             self.window = window
             window.makeKeyAndVisible()
-            main.start()
+            coordinator.start()
         }
     }
 

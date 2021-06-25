@@ -1,17 +1,18 @@
+import DependencyInjection
 import UIKit
 
-final public class MainCoordinator: MainCoordinatorProtocol {
+final class MainCoordinator: MainCoordinatorProtocol {
 
-    private let navigationController: UINavigationController
+    var navigationController: UINavigationController?
 
-    public init(navigationController: UINavigationController) {
-        self.navigationController = navigationController
+    func start() {
+//        let viewModel = MainViewModel(coordinator: self)
+//        let viewController = MainViewController(viewModel: viewModel)
+        let viewController = DIContainer.resolve(MainViewControllerProtocol.self)
+        navigationController?.setViewControllers([viewController], animated: false)
     }
 
-    public func start() {
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .green
-        viewController.title = "Hello, world!"
-        navigationController.setViewControllers([viewController], animated: false)
+    func showDetailPage() {
+
     }
 }

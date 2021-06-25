@@ -1,11 +1,11 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DependencyInjection" "${PODS_CONFIGURATION_BUILD_DIR}/Main" "${PODS_CONFIGURATION_BUILD_DIR}/Navigation"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DependencyInjection" "${PODS_CONFIGURATION_BUILD_DIR}/Main" "${PODS_CONFIGURATION_BUILD_DIR}/Navigation" "${PODS_CONFIGURATION_BUILD_DIR}/SharedUIComponents"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DependencyInjection/DependencyInjection.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Main/Main.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Navigation/Navigation.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DependencyInjection/DependencyInjection.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Main/Main.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Navigation/Navigation.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SharedUIComponents/SharedUIComponents.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_CONFIGURATION_BUILD_DIR}/DependencyInjection/DependencyInjection.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/Main/Main.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/Navigation/Navigation.framework/Headers" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/DependencyInjection" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/Main" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/Navigation"
-OTHER_LDFLAGS = $(inherited) -framework "DependencyInjection" -framework "Main" -framework "Navigation"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_CONFIGURATION_BUILD_DIR}/DependencyInjection/DependencyInjection.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/Main/Main.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/Navigation/Navigation.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/SharedUIComponents/SharedUIComponents.framework/Headers" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/DependencyInjection" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/Main" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/Navigation" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/SharedUIComponents"
+OTHER_LDFLAGS = $(inherited) -framework "DependencyInjection" -framework "Main" -framework "Navigation" -framework "SharedUIComponents"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

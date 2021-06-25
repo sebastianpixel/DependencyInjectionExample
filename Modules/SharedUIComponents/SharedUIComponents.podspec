@@ -10,25 +10,12 @@ Pod::Spec.new do |s|
   s.requires_arc  = true
   s.swift_version = '5.4'
 
-  s.subspec 'Interface' do |subspec|
-    subspec.source_files = 'Interface'
-    subspec.dependency 'Navigation/Interface'
+  s.subspec 'Interface' do |sp|
+    sp.source_files = 'Interface'
   end
 
-  s.subspec 'Implementation' do |subspec|
-    subspec.source_files = 'Implementation'
-
-    subspec.dependency 'DependencyInjection'
-
-    subspec.dependency "#{s.name}/Interface"
-    subspec.dependency 'SharedUIComponents/Interface'
-  end
-
-  s.test_spec 'Tests' do |test_spec|
-    test_spec.source_files = 'Tests'
-
-    test_spec.dependency 'DependencyInjection'
-
-    test_spec.dependency "#{s.name}/Interface"
+  s.subspec 'Implementation' do |sp|
+    sp.source_files = 'Implementation'
+    sp.dependency "#{s.name}/Interface"
   end
 end

@@ -1,8 +1,8 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DependencyInjection" "${PODS_CONFIGURATION_BUILD_DIR}/Main" "${PODS_CONFIGURATION_BUILD_DIR}/Navigation"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DependencyInjection" "${PODS_CONFIGURATION_BUILD_DIR}/Main" "${PODS_CONFIGURATION_BUILD_DIR}/Navigation" "${PODS_CONFIGURATION_BUILD_DIR}/SharedUIComponents"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -ObjC -framework "DependencyInjection" -framework "Main" -framework "Navigation"
+OTHER_LDFLAGS = $(inherited) -ObjC -framework "DependencyInjection" -framework "Main" -framework "Navigation" -framework "SharedUIComponents"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

@@ -23,10 +23,10 @@
       "test_type": "unit",
       "source_files": "Tests",
       "dependencies": {
-        "Main/Interface": [
+        "DependencyInjection": [
 
         ],
-        "DependencyInjection": [
+        "Main/Interface": [
 
         ]
       }
@@ -46,10 +46,13 @@
       "name": "Implementation",
       "source_files": "Implementation",
       "dependencies": {
+        "DependencyInjection": [
+
+        ],
         "Main/Interface": [
 
         ],
-        "DependencyInjection": [
+        "SharedUIComponents/Interface": [
 
         ]
       }
